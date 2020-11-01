@@ -1,4 +1,4 @@
-# Viget UI/Interface: Tabbed Content
+# UI/Interface: Tabbed Content
 For simplicity sake and time constraint, I chose to build this by sticking to a mock-up rather than pulling in data. 
 
 Please follow the steps below to spin it up
