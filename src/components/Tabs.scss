@@ -1,0 +1,108 @@
+@import "../assets/styles/variables";
+@import "../assets/styles/mixins";
+
+$tab-height: 105px;
+
+.tabs {
+  // content looks a little wide on tablet size, check with Design
+  @media (min-width: 1024px) {
+    display: block;
+    padding-left: $spacing-base * 4;
+    padding-right: $spacing-base * 4;
+  }
+}
+
+.tabs-nav {
+  display: none;
+
+  @media (min-width: 1024px) {
+    display: grid;
+    height: $tab-height;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+  }
+}
+
+.flank-lines {
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: $gray-light;
+    z-index: 2020;
+  }
+
+  &:before {
+    top: -1px;
+  }
+
+  &:after {
+    top: $tab-height;
+  }
+}
+
+.tab-item {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  color: $blue-light;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 800;
+  outline: none;
+  transition: color 0.2s ease, border-bottom 0.2s ease;
+
+  &.is-active {
+    border-bottom-color: $orange;
+    color: $orange;
+
+    &:focus-visible {
+      border-top: 3px solid $orange;
+    }
+  }
+
+  &:hover {
+    color: $orange;
+  }
+}
+
+.tab-content {
+  & + &, // any two tab-contents should have some vert spacing between
+  p + p {
+    margin-top: $spacing-base;
+  }
+
+  @media (min-width: 1024px) {
+    padding: $spacing-base 0;
+    display: none;
+
+    p {
+      padding-left: $spacing-base * 3;
+      padding-right: $spacing-base * 3;
+    }
+
+    & + & {
+      margin-top: 0;
+    }
+
+    &.is-active {
+      display: block;
+    }
+  }
+}
+
+.tab-content-title {
+  @media (min-width: 1024px) {
+    @include visually-hidden;
+  }
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}

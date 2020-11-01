@@ -1,0 +1,223 @@
+@import "assets/styles/reset";
+@import "assets/styles/type";
+@import "assets/styles/variables";
+@import "assets/styles/helpers";
+@import "assets/styles/mixins";
+
+.title {
+  @include hover-change;
+
+  display: inline-block;
+  color: $blue-light;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.title-capabilities {
+  margin-bottom: $spacing-small;
+  text-align: center;
+
+  @media (min-width: 1024px) {
+    margin-bottom: $spacing-base * 2;
+  }
+}
+
+/* Structure ------------- */
+.content-wrapper {
+  padding-left: $spacing-small;
+  padding-right: $spacing-small;
+  max-width: 1400px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative; // needed for flank lines
+}
+
+.wrapper + .wrapper:not(.flush) {
+  margin-top: $spacing-small;
+
+  @media (min-width: 1024px) {
+    margin-top: $spacing-base * 2;
+  }
+}
+
+.hero {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 24px;
+  }
+}
+
+.hero-copy {
+  margin: $spacing-base 0;
+  padding-right: $spacing-base / 2;
+
+  @media (min-width: 1024px) {
+    padding: $spacing-base * 4;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+  }
+}
+
+.hero-illy {
+  display: flex;
+  line-height: 0; // avoids gap at bottom
+  max-height: 250px;
+  overflow: hidden;
+  position: relative;
+  line-height: 0;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    max-height: 450px;
+  }
+
+  @media (min-width: 1200px) {
+    align-items: flex-start;
+    max-height: none;
+  }
+}
+
+.hero-img {
+  max-width: 100%;
+}
+
+.card-list {
+  display: grid;
+  grid-gap: $spacing-base;
+  justify-content: center;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  background-color: $gray-lighter;
+  padding: $spacing-small;
+  position: relative;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+
+  @media (min-width: 1024px) {
+    padding: $spacing-base * 2;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.card-summary {
+  @media (min-width: 768px) {
+    padding-right: $spacing-base * 2;
+  }
+
+  @media (min-width: 1024px) {
+    padding-right: 0;
+  }
+}
+
+.cta-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 1024px) {
+    align-self: flex-end; // keeps bottom visual alignment with longer text
+  }
+}
+
+.cta {
+  @include hover-change; // minor interactive on hover
+
+  display: inline-block;
+  background-color: $blue-light;
+  border-radius: 50%;
+  color: $white;
+  padding: 20px;
+  margin-top: $spacing-base;
+  font-size: 0; //TODO: do this better
+  position: relative;
+
+  @media (min-width: 1024px) {
+    margin-top: 40px;
+  }
+}
+
+.accessory {
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 16px;
+    border-bottom: 1px solid $gray-light;
+  }
+}
+
+.other {
+  display: flex;
+  align-items: center;
+  min-height: 105px;
+}
+
+.btn {
+  @include hover-change; // minor interactive on hover
+
+  background-color: $blue-light;
+  border-radius: 999px;
+  color: $white;
+  display: inline-block;
+  font-weight: 700;
+  padding: 0.5em 1.25em;
+  font-size: 14px;
+
+  &:visited {
+    color: $white;
+  }
+}
+
+.arrow-icon {
+  height: 12px;
+  width: 11px;
+  display: inline-block;
+
+  &.on-btn {
+    margin-left: 5px;
+  }
+
+  &.on-cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+// Footer
+.footer {
+  background-color: $blue-dark;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 90px;
+}
+
+.copyright {
+  color: $white;
+  font-size: 14px;
+  font-weight: 400;
+}
