@@ -1,9 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useState } from "react";
 import "./Tabs.scss";
 
 const Tabs = ({ children }) => {
-  // activeTab is the current tab that is active
   // activeTab is a number: 1, 2, 3 or 4 given that this is a static mockup and not a data-driven mock,
   const [activeTab, setActiveTab] = useState(1);
 
@@ -17,7 +16,6 @@ const Tabs = ({ children }) => {
 
   function arrowHelper(e) {
     // arrow up/down button should select next/previous list element
-    console.log("perogi", e.keyCode);
     if (
       e.keyCode === 38 /* keycode for up arrow */ ||
       e.keyCode === 37 /* left arrow */
@@ -44,7 +42,6 @@ const Tabs = ({ children }) => {
       >
         <button
           role="tab"
-          aria-selected="true"
           aria-controls="panel-1"
           id="tab-1"
           tabindex={isActive(1) ? `0` : `-1`}
@@ -56,7 +53,6 @@ const Tabs = ({ children }) => {
         </button>
         <button
           role="tab"
-          aria-selected="false"
           aria-controls="panel-2"
           id="tab-2"
           tabindex={isActive(2) ? `0` : `-1`}
@@ -68,7 +64,6 @@ const Tabs = ({ children }) => {
         </button>
         <button
           role="tab"
-          aria-selected="false"
           aria-controls="panel-3"
           id="tab-3"
           tabindex={isActive(3) ? `0` : `-1`}
@@ -80,7 +75,6 @@ const Tabs = ({ children }) => {
         </button>
         <button
           role="tab"
-          aria-selected="false"
           aria-controls="panel-4"
           id="tab-4"
           tabindex={isActive(4) ? `0` : `-1`}

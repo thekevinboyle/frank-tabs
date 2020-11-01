@@ -1,4 +1,6 @@
-// Anims
+@import "mixins";
+
+/* Animation ------------- */
 @keyframes fade-in-demo {
   from {
     opacity: 0;
@@ -38,12 +40,17 @@ and use that to selectively fade in e.g. .fonts-loaded .intro-fade { [do anim] }
   animation-delay: 0.75s; /* 1 */
 }
 
-// Spacing
+/* Spacing ------------- */
 .cbs {
   // content, standard bottom spacing. In a real system, something more robust
-  margin-bottom: 0.5em;
+  margin-bottom: 0.8em;
 }
 
 .cbs-sm {
   margin-bottom: 0.25em;
+}
+
+/* Accessibility ------------- */
+.visually-hidden {
+  @include visually-hidden;
 }

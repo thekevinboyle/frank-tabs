@@ -23,6 +23,40 @@
   }
 }
 
+/* Buttons ------------- */
+.cta {
+  @include hover-change; // minor interactive on hover
+
+  display: inline-block;
+  background-color: $blue-light;
+  border-radius: 50%;
+  color: $white;
+  padding: 20px;
+  margin-top: $spacing-base;
+  font-size: 0; //TODO: do this better
+  position: relative;
+
+  @media (min-width: 1024px) {
+    margin-top: 40px;
+  }
+}
+
+.btn {
+  @include hover-change; // minor interactive on hover
+
+  background-color: $blue-light;
+  border-radius: 999px;
+  color: $white;
+  display: inline-block;
+  font-weight: 700;
+  padding: 1.25em 1.8em;
+  font-size: 14px;
+
+  &:visited {
+    color: $white;
+  }
+}
+
 /* Structure ------------- */
 .content-wrapper {
   padding-left: $spacing-small;
@@ -48,14 +82,21 @@
   display: grid;
   justify-content: center;
   align-items: center;
+  margin-bottom: $spacing-small;
 
   @media (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: 1024px) {
+    margin-bottom: 0;
     font-size: 24px;
   }
+}
+
+.btn-hero {
+  display: inline-flex;
+  align-items: center;
 }
 
 .hero-copy {
@@ -120,6 +161,10 @@
 }
 
 .card-summary {
+  h3 {
+    position: relative;
+  }
+
   @media (min-width: 768px) {
     padding-right: $spacing-base * 2;
   }
@@ -139,23 +184,6 @@
   }
 }
 
-.cta {
-  @include hover-change; // minor interactive on hover
-
-  display: inline-block;
-  background-color: $blue-light;
-  border-radius: 50%;
-  color: $white;
-  padding: 20px;
-  margin-top: $spacing-base;
-  font-size: 0; //TODO: do this better
-  position: relative;
-
-  @media (min-width: 1024px) {
-    margin-top: 40px;
-  }
-}
-
 .accessory {
   &:before {
     content: "";
@@ -171,32 +199,17 @@
 .other {
   display: flex;
   align-items: center;
-  min-height: 105px;
-}
-
-.btn {
-  @include hover-change; // minor interactive on hover
-
-  background-color: $blue-light;
-  border-radius: 999px;
-  color: $white;
-  display: inline-block;
-  font-weight: 700;
-  padding: 0.5em 1.25em;
-  font-size: 14px;
-
-  &:visited {
-    color: $white;
-  }
+  min-height: $tab-height;
 }
 
 .arrow-icon {
+  display: inline-block;
   height: 12px;
   width: 11px;
-  display: inline-block;
 
   &.on-btn {
-    margin-left: 5px;
+    line-height: 0;
+    margin-left: 8px;
   }
 
   &.on-cta {
@@ -207,17 +220,17 @@
   }
 }
 
-// Footer
+/* Footer ------------- */
 .footer {
-  background-color: $blue-dark;
   display: flex;
+  background-color: $blue-dark;
+  color: $white;
   justify-content: flex-end;
   align-items: center;
   min-height: 90px;
 }
 
 .copyright {
-  color: $white;
   font-size: 14px;
   font-weight: 400;
 }

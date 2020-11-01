@@ -11,6 +11,7 @@
 
 @mixin hover-change {
   transition: all 0.4s ease;
+
   &:hover {
     opacity: 0.8;
   }

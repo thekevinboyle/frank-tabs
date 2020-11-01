@@ -1,8 +1,6 @@
 @import "../assets/styles/variables";
 @import "../assets/styles/mixins";
 
-$tab-height: 105px;
-
 .tabs {
   // content looks a little wide on tablet size, check with Design
   @media (min-width: 1024px) {
@@ -42,6 +40,7 @@ $tab-height: 105px;
   }
 
   &:after {
+    // TODO: restructure the markup in order for the gray lines to be bottom: 0 or similar to make this less brittle
     top: $tab-height;
   }
 }
@@ -56,6 +55,7 @@ $tab-height: 105px;
   font-size: 18px;
   font-weight: 800;
   outline: none;
+  padding-top: 20px;
   transition: color 0.2s ease, border-bottom 0.2s ease;
 
   &.is-active {
@@ -79,8 +79,8 @@ $tab-height: 105px;
   }
 
   @media (min-width: 1024px) {
-    padding: $spacing-base 0;
     display: none;
+    padding: $spacing-base 0;
 
     p {
       padding-left: $spacing-base * 3;
@@ -101,8 +101,4 @@ $tab-height: 105px;
   @media (min-width: 1024px) {
     @include visually-hidden;
   }
-}
-
-.visually-hidden {
-  @include visually-hidden;
 }

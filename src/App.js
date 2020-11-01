@@ -20,10 +20,10 @@ function App() {
                   combining two decades of agile development practice with
                   strategic thinking to make clients’ digital dreams a reality.
                 </p>
-                <a className="btn btn-hero" href="#">
+                <a className="btn btn-hero" href="#wip">
                   Recent Work
                   <i className="arrow-icon on-btn" aria-hidden="true">
-                    <img src={arrow} />
+                    <img src={arrow} alt="arrow" />
                   </i>
                 </a>
               </div>
@@ -61,7 +61,7 @@ function App() {
                   <h3 class="cbs">
                     <span className="accessory">Creative</span>
                   </h3>
-                  <a className="title cbs" href="">
+                  <a className="title cbs" href="#wip">
                     Combining style with substance.
                   </a>
                   <p>
@@ -73,10 +73,10 @@ function App() {
                   </p>
                 </section>
                 <nav className="cta-wrapper">
-                  <a className="cta" href="#">
+                  <a className="cta" href="#wip">
                     Read more
                     <i className="arrow-icon on-cta" aria-hidden="true">
-                      <img src={arrow} />
+                      <img src={arrow} alt="arrow" />
                     </i>
                   </a>
                 </nav>
@@ -87,7 +87,7 @@ function App() {
                   <h3 class="cbs">
                     <span className="accessory">User Experience</span>
                   </h3>
-                  <a className="title cbs" href="#">
+                  <a className="title cbs" href="#wip">
                     Delightfully usable.
                   </a>
                   <p>
@@ -99,10 +99,10 @@ function App() {
                   </p>
                 </section>
                 <nav className="cta-wrapper">
-                  <a className="cta" href="#">
+                  <a className="cta" href="#wip">
                     Read more
                     <i className="arrow-icon on-cta" aria-hidden="true">
-                      <img src={arrow} />
+                      <img src={arrow} alt="arrow" />
                     </i>
                   </a>
                 </nav>
@@ -113,7 +113,7 @@ function App() {
                   <h3 class="cbs">
                     <span className="accessory">Data and Analytics</span>
                   </h3>
-                  <a className="title cbs" href="#">
+                  <a className="title cbs" href="#wip">
                     Guided by Data.
                   </a>
                   <p>
@@ -125,10 +125,10 @@ function App() {
                   </p>
                 </section>
                 <nav className="cta-wrapper">
-                  <a className="cta" href="#">
+                  <a className="cta" href="#wip">
                     Read more
                     <i className="arrow-icon on-cta" aria-hidden="true">
-                      <img src={arrow} />
+                      <img src={arrow} alt="arrow" />
                     </i>
                   </a>
                 </nav>
@@ -140,10 +140,8 @@ function App() {
         {/* footer */}
         <footer className="footer wrapper" role="contentinfo">
           <div className="content-wrapper">
-            <p>
-              <span className="copyright">
-                &#169; 2019 All rights reserved.
-              </span>
+            <p className="copyright">
+              &#169; {new Date().getFullYear()} All rights reserved.
             </p>
           </div>
         </footer>
