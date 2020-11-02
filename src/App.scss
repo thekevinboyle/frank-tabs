@@ -44,13 +44,18 @@
 .btn {
   @include hover-change; // minor interactive on hover
 
+  display: inline-flex;
+  align-items: center;
   background-color: $blue-light;
   border-radius: 999px;
   color: $white;
-  display: inline-block;
   font-weight: 700;
   padding: 1.25em 1.8em;
   font-size: 14px;
+
+  &:hover {
+    color: $white;
+  }
 
   &:visited {
     color: $white;
@@ -92,11 +97,6 @@
     margin-bottom: 0;
     font-size: 24px;
   }
-}
-
-.btn-hero {
-  display: inline-flex;
-  align-items: center;
 }
 
 .hero-copy {
