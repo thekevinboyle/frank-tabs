@@ -12,8 +12,8 @@ function App() {
           <div className="content-wrapper">
             <div className="hero">
               <div className="hero-copy intro-fade">
-                <h1 class="cbs-sm">Front-End Development</h1>
-                <p class="cbs">
+                <h1 className="cbs-sm">Front-End Development</h1>
+                <p className="cbs">
                   <strong>Engineering with heart.</strong> From the beginning,
                   we’ve believed that software has the power to change the
                   world. We work with small startups and global brands alike,
@@ -58,7 +58,7 @@ function App() {
             <div className="card-list">
               <article className="card">
                 <section className="card-summary">
-                  <h3 class="cbs">
+                  <h3 className="cbs">
                     <span className="accessory">Creative</span>
                   </h3>
                   <a className="title cbs" href="#wip">
@@ -84,7 +84,7 @@ function App() {
 
               <article className="card">
                 <section className="card-summary">
-                  <h3 class="cbs">
+                  <h3 className="cbs">
                     <span className="accessory">User Experience</span>
                   </h3>
                   <a className="title cbs" href="#wip">
@@ -110,7 +110,7 @@ function App() {
 
               <article className="card">
                 <section className="card-summary">
-                  <h3 class="cbs">
+                  <h3 className="cbs">
                     <span className="accessory">Data and Analytics</span>
                   </h3>
                   <a className="title cbs" href="#wip">

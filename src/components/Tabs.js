@@ -44,7 +44,7 @@ const Tabs = ({ children }) => {
           role="tab"
           aria-controls="panel-1"
           id="tab-1"
-          tabindex={isActive(1) ? `0` : `-1`}
+          tabIndex={isActive(1) ? `0` : `-1`}
           className={`tab-item ${getActiveClass(1)}`}
           aria-selected={isActive(1)}
           onClick={() => setActiveTab(1)}
@@ -55,7 +55,7 @@ const Tabs = ({ children }) => {
           role="tab"
           aria-controls="panel-2"
           id="tab-2"
-          tabindex={isActive(2) ? `0` : `-1`}
+          tabIndex={isActive(2) ? `0` : `-1`}
           className={`tab-item ${getActiveClass(2)}`}
           aria-selected={isActive(2)}
           onClick={() => setActiveTab(2)}
@@ -66,7 +66,7 @@ const Tabs = ({ children }) => {
           role="tab"
           aria-controls="panel-3"
           id="tab-3"
-          tabindex={isActive(3) ? `0` : `-1`}
+          tabIndex={isActive(3) ? `0` : `-1`}
           className={`tab-item ${getActiveClass(3)}`}
           aria-selected={isActive(3)}
           onClick={() => setActiveTab(3)}
@@ -77,7 +77,7 @@ const Tabs = ({ children }) => {
           role="tab"
           aria-controls="panel-4"
           id="tab-4"
-          tabindex={isActive(4) ? `0` : `-1`}
+          tabIndex={isActive(4) ? `0` : `-1`}
           className={`tab-item ${getActiveClass(4)}`}
           aria-selected={isActive(4)}
           onClick={() => setActiveTab(4)}
@@ -88,7 +88,7 @@ const Tabs = ({ children }) => {
       <div
         id="panel-1"
         role="tabpanel"
-        tabindex="0"
+        tabIndex="0"
         aria-labelledby="tab-1"
         className={`tab-content ${getActiveClass(1)}`}
         aria-hidden={!isActive(1)}
@@ -110,7 +110,7 @@ const Tabs = ({ children }) => {
       <div
         id="panel-2"
         role="tabpanel"
-        tabindex="0"
+        tabIndex="0"
         aria-labelledby="tab-2"
         className={`tab-content ${getActiveClass(2)}`}
         aria-hidden={!isActive(2)}
@@ -128,7 +128,7 @@ const Tabs = ({ children }) => {
       <div
         id="panel-3"
         role="tabpanel"
-        tabindex="0"
+        tabIndex="0"
         aria-labelledby="tab-3"
         className={`tab-content ${getActiveClass(3)}`}
         aria-hidden={!isActive(3)}
@@ -144,7 +144,7 @@ const Tabs = ({ children }) => {
       <div
         id="panel-4"
         role="tabpanel"
-        tabindex="0"
+        tabIndex="0"
         aria-labelledby="tab-4"
         className={`tab-content ${getActiveClass(4)}`}
         aria-hidden={!isActive(4)}
