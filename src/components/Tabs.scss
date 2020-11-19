@@ -50,7 +50,7 @@
   background-color: transparent;
   border: 0;
   border-bottom: 3px solid transparent;
-  color: $blue-light;
+  color: $gray-dark;
   font-family: inherit;
   font-size: 18px;
   font-weight: 800;
@@ -59,16 +59,16 @@
   transition: color 0.2s ease, border-bottom 0.2s ease;
 
   &.is-active {
-    border-bottom-color: $orange;
-    color: $orange;
+    border-bottom-color: $rose;
+    color: $rose;
 
     &:focus-visible {
-      border-top: 3px solid $orange;
+      border-top: 3px solid $rose;
     }
   }
 
   &:hover {
-    color: $orange;
+    color: $rose;
   }
 }
 

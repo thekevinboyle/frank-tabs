@@ -8,7 +8,7 @@
   @include hover-change;
 
   display: inline-block;
-  color: $blue-light;
+  color: $rose;
   font-size: 24px;
   font-weight: 800;
   line-height: 1.2;
@@ -28,7 +28,7 @@
   @include hover-change; // minor interactive on hover
 
   display: inline-block;
-  background-color: $blue-light;
+  background-color: $gray-dark;
   border-radius: 50%;
   color: $white;
   padding: 20px;
@@ -46,7 +46,7 @@
 
   display: inline-flex;
   align-items: center;
-  background-color: $blue-light;
+  background-color: $gray-dark;
   border-radius: 999px;
   color: $white;
   font-weight: 700;
@@ -223,7 +223,7 @@
 /* Footer ------------- */
 .footer {
   display: flex;
-  background-color: $blue-dark;
+  background-color: $gray-dark;
   color: $white;
   justify-content: flex-end;
   align-items: center;

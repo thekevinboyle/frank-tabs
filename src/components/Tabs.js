@@ -49,7 +49,7 @@ const Tabs = ({ children }) => {
           aria-selected={isActive(1)}
           onClick={() => setActiveTab(1)}
         >
-          Client-Side Apps
+          nostalgia, ULTRA
         </button>
         <button
           role="tab"
@@ -60,7 +60,7 @@ const Tabs = ({ children }) => {
           aria-selected={isActive(2)}
           onClick={() => setActiveTab(2)}
         >
-          Craft CMS
+          channel ORANGE
         </button>
         <button
           role="tab"
@@ -71,7 +71,7 @@ const Tabs = ({ children }) => {
           aria-selected={isActive(3)}
           onClick={() => setActiveTab(3)}
         >
-          Mobile Apps
+          Endless
         </button>
         <button
           role="tab"
@@ -82,7 +82,7 @@ const Tabs = ({ children }) => {
           aria-selected={isActive(4)}
           onClick={() => setActiveTab(4)}
         >
-          React
+          Blonde
         </button>
       </nav>
       <div
@@ -93,18 +93,14 @@ const Tabs = ({ children }) => {
         className={`tab-content ${getActiveClass(1)}`}
         aria-hidden={!isActive(1)}
       >
-        <h3 className="tab-content-title">Client-Side Apps</h3>
+        <h3 className="tab-content-title">nostalgia ULTRA</h3>
         <p>
-          Powering modern web experiences. Client-side apps bring the
-          productivity-enhancing and user-pleasing experience of native software
-          to the web. If your web app needs an exceptionally fluid and
-          interactive interface, look no further.
-        </p>
-        <p>
-          Possit quaestio euripidis pri eu, ei quod dico mel. Mei diceret
-          placerat dissentiunt cu, pri debitis nostrum in. Usu ea tritani
-          tibique, ne vel nulla oporteat facilisis. Magna utamur rationibus at
-          mei, cum ei aliquip dissentiet. Dicta viris accommodare at cum.
+          is the debut mixtape by American singer Frank Ocean. It was released
+          on February 16, 2011.[3] Ocean was inspired to make the mixtape after
+          Hurricane Katrina in his native New Orleans and his subsequent
+          relocation to Los Angeles. After joining alternative hip hop group Odd
+          Future in 2010, he self-released the mixtape, without initial
+          promotion.
         </p>
       </div>
       <div
@@ -115,14 +111,19 @@ const Tabs = ({ children }) => {
         className={`tab-content ${getActiveClass(2)}`}
         aria-hidden={!isActive(2)}
       >
-        <h3 className="tab-content-title">Craft CMS</h3>
+        <h3 className="tab-content-title">channel ORANGE</h3>
         <p>
-          Craft is a flexible and practical content management system — easy to
-          use for members of any team, from designers to developers to content
-          producers. At Viget, we’ve been using Craft to create usable and
-          accessible websites since its inception. We’ve authored numerous
-          plugins and are committed to sharing our knowledge with the
-          development community.
+          Still riding the wave of success that followed his release of
+          nostalgia, ULTRA, Ocean began to work on a follow-up album to be
+          released by Def Jam records, with whom he had begun to repair his
+          relationship. In June 2012, he unveiled a new track, Pyramids, again
+          via his Tumblr site. The following month he performed another track
+          from the album on Late Night with Jimmy Fallon. Also in July, Ocean
+          posted an open letter to his website, in which he revealed that he had
+          feelings for both men and women. Many of his colleagues in the music
+          business immediately showed their public support for his courageous
+          decision to be open about his sexuality, although he made a point not
+          to label his orientation.
         </p>
       </div>
       <div
@@ -133,12 +134,11 @@ const Tabs = ({ children }) => {
         className={`tab-content ${getActiveClass(3)}`}
         aria-hidden={!isActive(3)}
       >
-        <h3 className="tab-content-title">Mobile Apps</h3>
+        <h3 className="tab-content-title">Endless</h3>
         <p>
-          We create polished and functional iOS &amp; Android mobile apps for
-          clients. These mobile apps are products of careful planning, strong
-          design, and agile development. Using technologies like React Native,
-          we create powerful mobile experiences across platforms.
+          is a visual album by American singer Frank Ocean. Released on August
+          19, 2016, Endless was Ocean's last release with the record label Def
+          Jam Recordings to fulfill his recording contract.
         </p>
       </div>
       <div
@@ -149,15 +149,13 @@ const Tabs = ({ children }) => {
         className={`tab-content ${getActiveClass(4)}`}
         aria-hidden={!isActive(4)}
       >
-        <h3 className="tab-content-title">React</h3>
+        <h3 className="tab-content-title">Blonde</h3>
         <p>
-          We use React to build rich, interaction-driven experiences on the web.
-          Since 2013, Viget has been using React as our JavaScript (JS) library
-          of choice for building user interfaces due to its component-based
-          design, outstanding performance, and improved developer productivity.
-          In addition to powering many immersive, interactive experiences across
-          our websites and web applications, we've shared a number of React
-          tools and components with the community.
+          Blonde features an abstract and experimental sound in comparison to
+          Ocean's previous releases, with genres encompassing R&B, avant-garde
+          soul and psychedelic pop. The album draws influences from Stevie
+          Wonder, the Beatles, and the Beach Boys, while Ocean's use of pitch
+          shifted vocals particularly drew comparisons to Prince by critics.
         </p>
       </div>
     </div>
